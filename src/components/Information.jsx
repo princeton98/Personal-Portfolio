@@ -4,14 +4,24 @@ import './Information.css'
 
 export default function Information(props) {
   return (
-    <section className="content">
-      <img className="headshot" src={Photo} alt="Profile Photo">
+    <section>
+    <img className="headshot" src={Photo} alt="Profile Photo">
       </img>
+      <section className="content">
       <h2>Princeton Arulnesan</h2>
       <h4>Junior Web Developer</h4>
-      <p className="description">
-        Recent graduate from Lighthouse Labs Bootcamp, with a diploma in Web Development. Specializing in front-end development, with a focus on React.js. Enjoy gaming, hanging out with friends, and having a good time with others.
+      <div className="description">
+        <p>
+        Recent graduate from Lighthouse Labs Bootcamp, with a diploma in Web Development.
       </p>
+      <p>
+      Specializing in front-end development, with a focus on React.js.
+      </p>
+      <p>
+      Enjoy gaming and hanging out with friends.
+      </p>
+      </div>
+    </section>
     </section>
   )
 }

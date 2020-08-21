@@ -1,15 +1,16 @@
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .headshot {
-  width: 10%;
+  width: 170px;
   height: 150px;
   border-radius: 100%;
 }
 
 .description {
-  width: 75%;
   overflow-wrap: break-word;
+  word-wrap: break-word;
 }

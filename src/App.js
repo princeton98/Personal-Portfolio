@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import Buttons from './components/Buttons'
 import './App.css';
 import Information from './components/Information'
 
@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Information></Information>
+      <Buttons></Buttons>
     </div>
   );
 }
