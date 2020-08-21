@@ -2,4 +2,14 @@ button {
   border-radius: 100%;
   width: 75px;
   height: 70px;
+  margin-right: 1%;
+}
+img {
+  width: 40px;
+  height: 40px;
+  
+}
+
+.socials {
+  padding-top: 10%;
 }
