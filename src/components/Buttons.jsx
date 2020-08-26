@@ -8,11 +8,17 @@ import Facebook from '../Image/facebook-logo.png';
 export default function Buttons(props) {
   return (
     <section className="socials">
-      <button type="submit" onclick="location.href='www.linkedin.com/in/princeton-arulnesan';">
+      <button type="button" onClick={(e) => {
+        e.preventDefault();
+        window.location.href='http://linkedin.com/in/princeton-arulnesan';
+      }}>
         <img src={LinkedIn} alt="LinkedIn">
         </img>
       </button>
-      <button>
+      <button type="button" onClick={(e) => {
+        e.preventDefault();
+        window.location.href='https://github.com/princeton98';
+      }}>
         <img src={Github} alt="Github">
         </img>
         </button>
@@ -20,7 +26,10 @@ export default function Buttons(props) {
         <img src={Gmail} alt="Email">
         </img>
         </button>
-      <button>
+        <button type="button" onClick={(e) => {
+        e.preventDefault();
+        window.location.href='https://www.facebook.com/prince.arul/';
+      }}>
         <img src={Facebook} alt="Facebook">
         </img>
         </button>
