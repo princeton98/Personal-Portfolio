@@ -8,25 +8,28 @@ import Facebook from '../Image/facebook-logo.png';
 export default function Buttons(props) {
   return (
     <section className="socials">
-      <button type="button" onClick={(e) => {
+      <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.location.href='http://linkedin.com/in/princeton-arulnesan';
       }}>
         <img src={LinkedIn} alt="LinkedIn">
         </img>
       </button>
-      <button type="button" onClick={(e) => {
+      <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.location.href='https://github.com/princeton98';
       }}>
         <img src={Github} alt="Github">
         </img>
         </button>
-      <button>
+        <button type="button" className="social-buttons" onClick={(e) => {
+        e.preventDefault();
+        window.open('mailto:princeton.arul@gmail.com')
+      }}>
         <img src={Gmail} alt="Email">
         </img>
         </button>
-        <button type="button" onClick={(e) => {
+        <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.location.href='https://www.facebook.com/prince.arul/';
       }}>

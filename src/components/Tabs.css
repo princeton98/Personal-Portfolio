@@ -1,0 +1,9 @@
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tabs-buttons {
+  background: none;
+  border: none;
+  margin-top: 5%
+}
