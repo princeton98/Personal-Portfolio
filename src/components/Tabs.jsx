@@ -12,13 +12,13 @@ export default function Tabs(props) {
       <button className="tabs-buttons" onClick={() => props.setTransition("Skills")}>
         Skills
       </button>
-      <button className="tabs-buttons">
+      <button className="tabs-buttons" onClick={() => props.setTransition("Experience")}>
         Experience
       </button>
-      <button className="tabs-buttons">
+      <button className="tabs-buttons" onClick={() => props.setTransition("Projects")}>
         Projects
       </button>
-      <button className="tabs-buttons">
+      <button className="tabs-buttons" onClick={() => props.setTransition("Education")}>
         Education
       </button>
     </div>
