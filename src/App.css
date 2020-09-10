@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Top {
+  background-color: lightblue;
+}
+
+.Bottom {
+  background-color: black;
+}

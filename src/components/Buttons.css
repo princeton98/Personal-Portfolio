@@ -1,8 +1,11 @@
 .social-buttons {
   border-radius: 100%;
+  border-color: black;
   width: 75px;
   height: 70px;
   margin-right: 1%;
+  margin-bottom: 4%;
+  background-color: transparent
 }
 img {
   width: 40px;
