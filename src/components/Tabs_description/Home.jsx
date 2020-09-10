@@ -1,10 +1,11 @@
 import React from 'react';
-
+import './Home.css';
 export default function Home(props) {
   return (
     <div>
       <h1>About me</h1>
       <h5>Subtext</h5>
+      <section className="text">
       <div className="left-side">
         <h3>Newly trained web developer</h3>
         <p>
@@ -16,6 +17,7 @@ export default function Home(props) {
           hello sir
         </p>
       </div>
+      </section>
     </div>
   )
 }

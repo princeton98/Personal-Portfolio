@@ -1,0 +1,8 @@
+.text {
+  display: flex;
+}
+
+.left-side {
+  width: 50%;
+  word-wrap: break-word;
+}

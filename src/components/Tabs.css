@@ -3,6 +3,9 @@
   justify-content: space-evenly;
 }
 .tabs-buttons {
+  width: 15%;
+  height: 50px;
+  font-size: larger;
   background: none;
   color: grey;
   border: none;
