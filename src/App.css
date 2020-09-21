@@ -38,7 +38,7 @@
 }
 
 .Top {
-  background-color: lightblue;
+  background-image: linear-gradient(red, yellow);
 }
 
 .Bottom {

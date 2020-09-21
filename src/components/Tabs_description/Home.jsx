@@ -14,7 +14,7 @@ export default function Home(props) {
       </div>
       <div className="right-side">
         <p>
-          hello sir
+          Outside of coding, I have had experiences with team settings through sports, such as volleyball, and through my highschool band. I understand the importance of practice and working as a team through these activites, which gives me an edge of understanding team dynamics and roles.
         </p>
       </div>
       </section>
