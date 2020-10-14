@@ -12,28 +12,28 @@ export default function Buttons(props) {
         e.preventDefault();
         window.location.href='http://linkedin.com/in/princeton-arulnesan';
       }}>
-        <img src={LinkedIn} alt="LinkedIn">
+        <img className="socials-pictures" src={LinkedIn} alt="LinkedIn">
         </img>
       </button>
       <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.location.href='https://github.com/princeton98';
       }}>
-        <img src={Github} alt="Github">
+        <img className="socials-pictures" src={Github} alt="Github">
         </img>
         </button>
         <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.open('mailto:princeton.arul@gmail.com')
       }}>
-        <img src={Gmail} alt="Email">
+        <img className="socials-pictures" src={Gmail} alt="Email">
         </img>
         </button>
         <button type="button" className="social-buttons" onClick={(e) => {
         e.preventDefault();
         window.location.href='https://www.facebook.com/prince.arul/';
       }}>
-        <img src={Facebook} alt="Facebook">
+        <img className="socials-pictures" src={Facebook} alt="Facebook">
         </img>
         </button>
     </section>
