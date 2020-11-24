@@ -1,14 +1,18 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Projects.css";
 import axios from "axios"
 export default function Projects(props) {
-  let projectNames = {"Apocalypse-Twins": [], "scheduler": [], "tweeter": [], "midterm": [], "Jungle": []}
+  let projectNames = {"Apocalypse-Twins": "", "scheduler": "", "tweeter": "", "midterm": "", "Jungle": ""}
   let total = 0;
+  let apLanguages = ""
+  const [language, setLanguage] = useState("");
   useEffect(() => {
-    for (let key in projectNames) {
-      axios.get(`https://api.github.com/repos/princeton98/${key}/languages`)
+    async function fetchData() {
+      for (let key in projectNames) {
+      await axios.get(`https://api.github.com/repos/princeton98/${key}/languages`)
       .then(function (response) {
-        projectNames[key].push(response.data)
+        setLanguage(response.data)
+        projectNames[key] = language;
         //console.log(projectNames);
         for (let key2 in projectNames[key][0]) {
           total += projectNames[key][0][key2];
@@ -16,17 +20,23 @@ export default function Projects(props) {
         }
         //console.log(projectNames[key][0]);
         for (let key2 in projectNames[key][0]) {
-          projectNames[key][0][key2] = `${Math.round(100 * (projectNames[key][0][key2]/total))}%`;
+          projectNames[key][0][key2] = `${(100 * (projectNames[key][0][key2]/total)).toFixed(2)}%`;
         }
         console.log(projectNames[key][0]);
         total = 0;
-      })
+      }
+      
+      )
       .catch(function (error) {
         console.log(error);
       })
     }
-  },[])
-
+  }
+  fetchData();
+  //apLanguages = [projectNames["Apocalypse-Twins"][0]]["JavaScript"];
+},[])
+console.log(projectNames);
+console.log(projectNames["Apocalypse-Twins"][0]);
   return (
     <div>
       <h1>Projects</h1>
@@ -40,6 +50,13 @@ export default function Projects(props) {
         <p>
           Cooperative text-based adventure game. Done within a group of 3.
         </p>
+        <div>
+          <p>Javascript</p>
+          <div className="skills-container">
+            <div className="skills-javascript">{projectNames["scheduler"]}
+            </div>
+          </div>
+        </div>
         </section>
         <section className="project">
         <h2>
