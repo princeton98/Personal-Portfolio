@@ -1,42 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import "./Projects.css";
-import axios from "axios"
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import "bootstrap/dist/css/bootstrap.css"
+
 export default function Projects(props) {
-  let projectNames = {"Apocalypse-Twins": "", "scheduler": "", "tweeter": "", "midterm": "", "Jungle": ""}
-  let total = 0;
-  let apLanguages = ""
-  const [language, setLanguage] = useState("");
-  useEffect(() => {
-    async function fetchData() {
-      for (let key in projectNames) {
-      await axios.get(`https://api.github.com/repos/princeton98/${key}/languages`)
-      .then(function (response) {
-        setLanguage(response.data)
-        projectNames[key] = language;
-        //console.log(projectNames);
-        for (let key2 in projectNames[key][0]) {
-          total += projectNames[key][0][key2];
-          projectNames[key][0]["total"] = total;
-        }
-        //console.log(projectNames[key][0]);
-        for (let key2 in projectNames[key][0]) {
-          projectNames[key][0][key2] = `${(100 * (projectNames[key][0][key2]/total)).toFixed(2)}%`;
-        }
-        console.log(projectNames[key][0]);
-        total = 0;
-      }
-      
-      )
-      .catch(function (error) {
-        console.log(error);
-      })
-    }
-  }
-  fetchData();
-  //apLanguages = [projectNames["Apocalypse-Twins"][0]]["JavaScript"];
-},[])
-console.log(projectNames);
-console.log(projectNames["Apocalypse-Twins"][0]);
+console.log(props.projectNames);
+//console.log(props.projectNames[0]["Apocalypse-Twins"]);
   return (
     <div>
       <h1>Projects</h1>
@@ -50,12 +19,13 @@ console.log(projectNames["Apocalypse-Twins"][0]);
         <p>
           Cooperative text-based adventure game. Done within a group of 3.
         </p>
-        <div>
           <p>Javascript</p>
-          <div className="skills-container">
-            <div className="skills-javascript">{projectNames["scheduler"]}
-            </div>
-          </div>
+        <div className="stacked-bar">
+          <ProgressBar>
+            <ProgressBar striped variant="success" now={Number(props.projectNames[0]["Apocalypse-Twins"]["JavaScript"])} key={1} />
+            <ProgressBar variant="warning" now={Number(props.projectNames[0]["Apocalypse-Twins"]["CSS"])} key={2} />
+            <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["Apocalypse-Twins"]["HTML"])} key={3} />
+          </ProgressBar>
         </div>
         </section>
         <section className="project">
@@ -65,6 +35,13 @@ console.log(projectNames["Apocalypse-Twins"][0]);
         <p>
           A React based site that arranges interviewers with interviewees
         </p>
+        <div className="stacked-bar">
+          <ProgressBar>
+            <ProgressBar striped variant="success" now={Number(props.projectNames[0]["scheduler"]["JavaScript"])} key={1} />
+            <ProgressBar variant="warning" now={Number(props.projectNames[0]["scheduler"]["CSS"])} key={2} />
+            <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["scheduler"]["HTML"])} key={3} />
+          </ProgressBar>
+        </div>
         </section>
         <section className="project">
         <h2>
@@ -73,6 +50,13 @@ console.log(projectNames["Apocalypse-Twins"][0]);
         <p>
           A mini-twitter site. Done with Html, Css, Jquery
         </p>
+        <div className="stacked-bar">
+        <ProgressBar>
+            <ProgressBar striped variant="success" now={Number(props.projectNames[0]["tweeter"]["JavaScript"])} key={1} />
+            <ProgressBar variant="warning" now={Number(props.projectNames[0]["tweeter"]["CSS"])} key={2} />
+            <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["tweeter"]["HTML"])} key={3} />
+          </ProgressBar>
+          </div>
         </section>
         <section className="project">
         <h2>
@@ -81,6 +65,14 @@ console.log(projectNames["Apocalypse-Twins"][0]);
         <p>
           Basic ecommerce webiste, inspired by Ebay
         </p>
+        <div className="stacked-bar">
+        <ProgressBar>
+            <ProgressBar striped variant="success" now={Number(props.projectNames[0]["midterm"]["JavaScript"])} key={1} />
+            <ProgressBar variant="warning" now={Number(props.projectNames[0]["midterm"]["CSS"])} key={2} />
+            <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["midterm"]["HTML"])} key={3} />
+            <ProgressBar striped variant="info" now={Number(props.projectNames[0]["midterm"]["TSQL"])} key={3} />
+          </ProgressBar>
+          </div>
         </section>
         <section className="project">
         <h2>
@@ -89,6 +81,14 @@ console.log(projectNames["Apocalypse-Twins"][0]);
         <p>
           A mini e-commerce application. Focused on adding new features to the site
         </p>
+        <div className="stacked-bar">
+        <ProgressBar>
+            <ProgressBar striped variant="success" now={Number(props.projectNames[0]["Jungle"]["JavaScript"])} key={1} />
+            <ProgressBar variant="warning" now={Number(props.projectNames[0]["Jungle"]["CSS"])} key={2} />
+            <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["Jungle"]["HTML"])} key={3} />
+            <ProgressBar striped variant="violet" now={Number(props.projectNames[0]["Jungle"]["Ruby"])} key={3} />
+          </ProgressBar>
+          </div>
         </section>
       </div>
     </div>

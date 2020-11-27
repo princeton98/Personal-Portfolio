@@ -20,7 +20,7 @@ export default function Bottom(props) {
       {transition === "Home" && <Home></Home>}
       {transition === "Skills" && <Skills></Skills>}
       {transition === "Experience" && <Experience></Experience>}
-      {transition === "Projects" && <Projects></Projects>}
+      {transition === "Projects" && <Projects projectNames={props.projectNames}></Projects>}
       {transition === "Education" && <Education></Education>}
       </section>
     </div>
