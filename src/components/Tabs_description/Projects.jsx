@@ -19,13 +19,26 @@ console.log(props.projectNames);
         <p>
           Cooperative text-based adventure game. Done within a group of 3.
         </p>
-          <p>Javascript</p>
         <div className="stacked-bar">
           <ProgressBar>
             <ProgressBar striped variant="success" now={Number(props.projectNames[0]["Apocalypse-Twins"]["JavaScript"])} key={1} />
             <ProgressBar variant="warning" now={Number(props.projectNames[0]["Apocalypse-Twins"]["CSS"])} key={2} />
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["Apocalypse-Twins"]["HTML"])} key={3} />
-          </ProgressBar>
+            </ProgressBar>
+            <div className="lables">
+              <div className="javascript">
+                <p>Javascript</p>
+                <div className="label-color green"></div>
+              </div>
+              <div className="javascript">
+                <p>Css</p>
+                <div className="label-color yellow"></div>
+              </div>
+              <div className="javascript">
+                <p>HTML</p>
+                <div className="label-color red"></div>
+              </div>
+            </div>
         </div>
         </section>
         <section className="project">
@@ -41,7 +54,21 @@ console.log(props.projectNames);
             <ProgressBar variant="warning" now={Number(props.projectNames[0]["scheduler"]["CSS"])} key={2} />
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["scheduler"]["HTML"])} key={3} />
           </ProgressBar>
-        </div>
+          </div>
+          <div className="lables">
+              <div className="javascript">
+                <p>Javascript</p>
+                <div className="label-color green"></div>
+              </div>
+              <div className="javascript">
+                <p>Css</p>
+                <div className="label-color yellow"></div>
+              </div>
+              <div className="javascript">
+                <p>HTML</p>
+                <div className="label-color red"></div>
+              </div>
+            </div>
         </section>
         <section className="project">
         <h2>
@@ -57,6 +84,20 @@ console.log(props.projectNames);
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["tweeter"]["HTML"])} key={3} />
           </ProgressBar>
           </div>
+          <div className="lables">
+              <div className="javascript">
+                <p>Javascript</p>
+                <div className="label-color green"></div>
+              </div>
+              <div className="javascript">
+                <p>Css</p>
+                <div className="label-color yellow"></div>
+              </div>
+              <div className="javascript">
+                <p>HTML</p>
+                <div className="label-color red"></div>
+              </div>
+            </div>
         </section>
         <section className="project">
         <h2>
@@ -73,6 +114,24 @@ console.log(props.projectNames);
             <ProgressBar striped variant="info" now={Number(props.projectNames[0]["midterm"]["TSQL"])} key={3} />
           </ProgressBar>
           </div>
+          <div className="lables">
+              <div className="javascript">
+                <p>Javascript</p>
+                <div className="label-color green"></div>
+              </div>
+              <div className="javascript">
+                <p>Css</p>
+                <div className="label-color yellow"></div>
+              </div>
+              <div className="javascript">
+                <p>HTML</p>
+                <div className="label-color red"></div>
+              </div>
+              <div className="javascript">
+                <p>PSQL</p>
+                <div className="label-color cyan"></div>
+              </div>
+            </div>
         </section>
         <section className="project">
         <h2>
@@ -89,6 +148,24 @@ console.log(props.projectNames);
             <ProgressBar striped variant="violet" now={Number(props.projectNames[0]["Jungle"]["Ruby"])} key={3} />
           </ProgressBar>
           </div>
+          <div className="lables">
+              <div className="javascript">
+                <p>Javascript</p>
+                <div className="label-color green"></div>
+              </div>
+              <div className="javascript">
+                <p>Css</p>
+                <div className="label-color yellow"></div>
+              </div>
+              <div className="javascript">
+                <p>HTML</p>
+                <div className="label-color red"></div>
+              </div>
+              <div className="javascript">
+                <p>Jungle</p>
+                <div className="label-color blue"></div>
+              </div>
+            </div>
         </section>
       </div>
     </div>

@@ -5,7 +5,7 @@ export default function Home(props) {
     <div>
       <h1>About me</h1>
       <h5>Subtext</h5>
-        <h3 className="text-description">Newly trained web developer</h3>
+        <h3 className="home-text-description">Newly trained web developer</h3>
       <section className="text">
       <div className="left-side">
         <p>

@@ -30,15 +30,16 @@
   margin-left: 2.5em;
 }
 .container-skills {
-  width: 400px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 1.5em;
   position: relative;
 }
 .skills-picture {
-  width: 400px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 1.5em;
+  border-radius: 20px;
 }
 
 .overlay {
