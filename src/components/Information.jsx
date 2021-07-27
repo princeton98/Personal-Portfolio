@@ -8,14 +8,14 @@ export default function Information(props) {
     <img className="headshot" src={Photo} alt="Profile Photo">
       </img>
       <section className="content">
-      <h2>Princeton Arulnesan</h2>
+      <h1>Princeton Arulnesan</h1>
       <h4>Junior Web Developer</h4>
       <div className="description">
         <p>
-        Recent graduate from Lighthouse Labs Bootcamp, with a diploma in Web Development.
+         Graduated from Lighthouse Labs Bootcamp with a diploma in Web Development.
       </p>
       <p>
-      Specializing in front-end development, with a focus on React.js.
+      Specializing in front-end and back-end, with a focus on React.js.
       </p>
       <p>
       Enjoy gaming and hanging out with friends.
