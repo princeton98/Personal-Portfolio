@@ -13,7 +13,6 @@ export default function Skills(props) {
   return (
     <div>
       <h1>Skills</h1>
-      <h5>Subtext</h5>
       <section className="text">
       <div className="left-side-skills">
       <div className="container-skills">

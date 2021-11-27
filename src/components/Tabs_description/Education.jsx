@@ -4,21 +4,16 @@ export default function Projects(props) {
   return (
     <div>
       <h1>Education</h1>
-      <h5>Subtext</h5>
       <div className="left-side">
-        <h3>Recently Graduated</h3>
+        <h3>McMaster University </h3>
         <p>
-          McMaster University
+          Bachelor of Arts, Psychology    
         </p>
-        <p>
-          Lighthouse Labs
+        <h3>Lighthouse Labs</h3>
+        <p className="bottom-paragraph">
+          Web Development Diploma
         </p>
-      </div>
-      <div className="right-side">
-        <p>
-          hello sir
-        </p>
-      </div>
+      </div>  
     </div>
   )
 }

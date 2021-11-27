@@ -9,12 +9,13 @@ console.log(props.projectNames);
   return (
     <div>
       <h1>Projects</h1>
-      <h5>Subtext</h5>
       <h3 className="github-profile"> <a href="https://www.github.com/princeton98">github.com/princeton98 </a></h3>
       <div className="left-side">
         <section className="project">
         <h2>
+          <a href="https://github.com/princeton98/Apocalypse-Twins">
           Apocalypse Twins
+          </a>
         </h2>
         <p>
           Cooperative text-based adventure game. Done within a group of 3.
@@ -25,7 +26,7 @@ console.log(props.projectNames);
             <ProgressBar variant="warning" now={Number(props.projectNames[0]["Apocalypse-Twins"]["CSS"])} key={2} />
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["Apocalypse-Twins"]["HTML"])} key={3} />
             </ProgressBar>
-            <div className="lables">
+            <div className="labels">
               <div className="javascript">
                 <p>Javascript</p>
                 <div className="label-color green"></div>
@@ -43,7 +44,9 @@ console.log(props.projectNames);
         </section>
         <section className="project">
         <h2>
+          <a href="https://github.com/princeton98/scheduler">
           Interview Scheduler
+          </a>
         </h2>
         <p>
           A React based site that arranges interviewers with interviewees
@@ -55,7 +58,7 @@ console.log(props.projectNames);
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["scheduler"]["HTML"])} key={3} />
           </ProgressBar>
           </div>
-          <div className="lables">
+          <div className="labels">
               <div className="javascript">
                 <p>Javascript</p>
                 <div className="label-color green"></div>
@@ -72,7 +75,9 @@ console.log(props.projectNames);
         </section>
         <section className="project">
         <h2>
+          <a href="https://github.com/princeton98/tweeter">
           Tweeter
+          </a>
         </h2>
         <p>
           A mini-twitter site. Done with Html, Css, Jquery
@@ -84,7 +89,7 @@ console.log(props.projectNames);
             <ProgressBar striped variant="danger" now={Number(props.projectNames[0]["tweeter"]["HTML"])} key={3} />
           </ProgressBar>
           </div>
-          <div className="lables">
+          <div className="labels">
               <div className="javascript">
                 <p>Javascript</p>
                 <div className="label-color green"></div>
@@ -101,7 +106,9 @@ console.log(props.projectNames);
         </section>
         <section className="project">
         <h2>
+          <a href="https://github.com/princeton98/midterm">
           Buy/Sell Listing Website
+          </a>
         </h2>
         <p>
           Basic ecommerce webiste, inspired by Ebay
@@ -114,7 +121,7 @@ console.log(props.projectNames);
             <ProgressBar striped variant="info" now={Number(props.projectNames[0]["midterm"]["TSQL"])} key={3} />
           </ProgressBar>
           </div>
-          <div className="lables">
+          <div className="labels">
               <div className="javascript">
                 <p>Javascript</p>
                 <div className="label-color green"></div>
@@ -135,7 +142,9 @@ console.log(props.projectNames);
         </section>
         <section className="project">
         <h2>
+          <a href="https://github.com/princeton98/Jungle">
           Jungle
+          </a>
         </h2>
         <p>
           A mini e-commerce application. Focused on adding new features to the site
@@ -148,7 +157,7 @@ console.log(props.projectNames);
             <ProgressBar striped variant="violet" now={Number(props.projectNames[0]["Jungle"]["Ruby"])} key={3} />
           </ProgressBar>
           </div>
-          <div className="lables">
+          <div className="labels">
               <div className="javascript">
                 <p>Javascript</p>
                 <div className="label-color green"></div>

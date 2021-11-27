@@ -11,6 +11,7 @@
 }
 
 .right-side {
+  padding-left: 15px;
   width: 49%;
   text-align: left;
   word-wrap: break-word;
@@ -21,4 +22,8 @@
   display: flex;
   justify-content: flex-start;
   margin-left: 1.5em;
+}
+
+.bottom-paragraph {
+  padding-bottom: 10px;
 }
